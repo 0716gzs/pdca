@@ -59,13 +59,11 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.messages',
-    'django.contrib.sessions',
     'django.contrib.staticfiles',
 
     'rest_framework',
     'django_filters',
     'corsheaders',
-    'coreapi',
 ]
 
 INSTALLED_APPS += [
@@ -149,7 +147,7 @@ REST_FRAMEWORK = {
     #
     # 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
     # 接口文档生成
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema'
+    # 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema'
 }
 
 

@@ -17,11 +17,9 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
 from apps.auths.urls import account_urls, account_routers
-from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     # api
-    path('docs/', include_docs_urls('站点页面标题')),
     # BaseModelViewSet 路由
     path('admin/', admin.site.urls),
     path('api/v1/', include(account_routers.urls)),
