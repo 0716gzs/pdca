@@ -1,0 +1,26 @@
+# 删除数据库中 django_migrations表 之后django迁移报错 “ Table 'django_content_type' already exists”
+        解决 python3 manage.py migrate --fake-initial
+asgiref==3.5.2
+async-timeout==4.0.2
+Django==3.2
+django-cors-headers==3.13.0
+django-filter==22.1
+djangorestframework==3.13.1
+docxcompose==1.3.5
+docxtpl==0.16.4
+Jinja2==3.1.2
+lxml==4.9.1
+MarkupSafe==2.1.1
+mysqlclient==1.4.6
+packaging==21.3
+PyJWT==2.4.0
+PyMySQL==1.0.2
+pyparsing==3.0.9
+python-docx==0.8.11
+pytz==2022.2.1
+redis==4.3.5
+redlock==1.2.0
+six==1.16.0
+sqlparse==0.4.2
+xlrd==2.0.1
+xlwt==1.3.0
