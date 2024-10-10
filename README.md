@@ -1,2 +1,2 @@
 # pdca
-pdca 疾患管理
+pdca管理系统
