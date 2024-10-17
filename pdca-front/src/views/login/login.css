@@ -1,0 +1,91 @@
+.hjbBpk {
+    position: relative;
+    width: 782px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 15px;
+    margin-top: 50px;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 1200px;
+    height: 518px;
+}
+
+/*登陆隐私政策文字*/
+.jAvWcN {
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+}
+
+.protocol {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*二维码*/
+.pdca-qrcode {
+    width: 100%;
+}
+
+/*img {*/
+/*    overflow-clip-margin: content-box;*/
+/*    overflow: clip;*/
+/*}*/
+
+.wrapper {
+    margin-top: 40px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.pdca-qrcode-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 206px;
+}
+
+.methods {
+    font-size: 14px;
+    color: rgb(24, 24, 24);
+}
+.methods-text {
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+}
+
+.qr-method {
+    padding: 0px 69px;
+    position: relative;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    border-right: 0.5px solid rgb(196, 203, 215);
+}
+
+.method {
+    height: 408px;
+}
+
+.pdca-channel {
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.qrlogin-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(24, 24, 24);
+    margin-bottom: 1em;
+}

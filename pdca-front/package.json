@@ -1,0 +1,30 @@
+{
+  "name": "pdca-front",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.3",
+    "element-plus": "^2.8.0",
+    "js-cookie": "^3.0.5",
+    "qrcode": "^1.5.4",
+    "spark-md5": "^3.0.2",
+    "uuid": "^10.0.0",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/compiler-sfc": "^3.0.4",
+    "glob": "^11.0.0",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.4",
+    "sass": "^1.32.12",
+    "sass-loader": "^13.3.3",
+    "vite": "^5.4.0"
+  }
+}
