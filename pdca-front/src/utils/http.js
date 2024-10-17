@@ -4,8 +4,8 @@ import status from './status'
 import { refreshToken, getUserInfoByToken } from '/src/api/user_info'
 import { router } from '/src/router'; // 导入你的路由设置
 
-// let baseURL = "https://pdca.0716gzs.cn/pdca/";
-let baseURL = "http://127.0.0.1:8000/pdca";
+let baseURL = "https://pdca.0716gzs.cn/pdca/";
+// let baseURL = "http://127.0.0.1:8000/pdca";
 
 
 const server = axios.create({
