@@ -67,6 +67,7 @@ export default {
     loginOut(){
       removeCookie('user_token')
       RemoveStorage('user_data')
+      RemoveStorage('menu_index')
       this.goHomePage()
     },
   },

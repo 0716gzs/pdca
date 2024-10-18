@@ -59,7 +59,7 @@ class ProjectStatus:
 class PlanLevel:
     EASY = 1
     NORMAL = 2
-    HARD = 2
+    HARD = 3
     CHOICES = (
         (EASY, '简单'),
         (NORMAL, '一般'),

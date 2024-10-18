@@ -21,6 +21,8 @@
 import HeaderMenu from '../../module/HomePageModule/Header.vue'
 import ControlConsoleAside from '../../module/HomePageModule/ControlConsole/ControlConsoleAside.vue'
 import ControlConsoleMain from '../../module/HomePageModule/ControlConsole/ControlConsoleMain.vue'
+import {GetStorage, SetStorage} from '/src/utils/token'
+
 
 export default {
   name: "index",
@@ -30,10 +32,15 @@ export default {
     ControlConsoleMain,
   },
   data() {
+    const menu_index = GetStorage('menu_index')
+    if (menu_index === null) {
+      SetStorage('menu_index', 2)
+    }
     return {
-      activeIndex: '2'
+      activeIndex: String(GetStorage('menu_index')) || '2' // 从存储获取值，若获取失败则默认为 '2'
     }
   },
+
   methods: {
     updateActiveIndex(index) {
       this.activeIndex = index;

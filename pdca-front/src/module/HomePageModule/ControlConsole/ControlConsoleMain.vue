@@ -9,6 +9,7 @@ import PlanPage from './Plan.vue';
 import DoPage from './Do.vue';
 import CheckPage from './Check.vue';
 import ActionPage from './Action.vue';
+import { SetStorage, GetStorage } from '/src/utils/token'
 
 export default {
   props: {
@@ -20,6 +21,8 @@ export default {
 
   computed: {
     currentComponent() {
+
+      SetStorage('menu_index', this.currentIndex)
       switch (this.currentIndex) {
         case '1':
           return PlanPage;

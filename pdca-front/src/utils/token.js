@@ -18,11 +18,14 @@ export  function SetStorage(key, value){
 }
 
 
-export function GetStorage(){
-    return JSON.parse(localStorage.getItem('user_data'));
+export function GetStorage(key, flag=true){
+    if (flag){
+        return JSON.parse(localStorage.getItem(key));
+    }
+    return localStorage.getItem(key);
 }
 
-export function RemoveStorage(){
-    localStorage.removeItem('user_data')
+export function RemoveStorage(key){
+    localStorage.removeItem(key)
 }
 

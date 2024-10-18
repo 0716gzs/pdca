@@ -44,6 +44,9 @@ server.interceptors.response.use(
         if (res.data instanceof Blob){
             return res.data;
         }
+        if (res.data.pagination){
+            return res.data;
+        }
         return res.data.data;
     },
     async (error) => {
@@ -63,6 +66,7 @@ server.interceptors.response.use(
             if (currentPath !== '/HomePage') {
                 removeCookie('user_token');
                 RemoveStorage('user_data');
+                RemoveStorage('menu_index');
                 removeCookie('refresh_token');
                 router.push({ path: '/login' });
             }
